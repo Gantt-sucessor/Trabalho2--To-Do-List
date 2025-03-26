@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+#todoInput {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+#addButton {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#addButton:hover {
+    background-color: #45a049;
+}
+#todoList {
+    list-style-type: none;
+    padding: 0;
+}
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.todo-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.remove-btn, .complete-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
+.complete-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+}
+.complete-btn:hover {
+    background-color: #1976D2;
+}
